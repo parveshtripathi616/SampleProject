@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>Slide 1</h2>
+                    <p>Beautiful landscape with mountains and lakes</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Slide 2</h2>
+                    <p>Urban cityscape with modern architecture</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Slide 3</h2>
+                    <p>Peaceful beach with crystal clear water</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Slide 4</h2>
+                    <p>Dense forest with tall trees and wildlife</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">❯</button>
+        
+        <!-- Dots indicator -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
