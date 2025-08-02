@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider - Local Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Replace these src paths with your own local images -->
+            <div class="slide active">
+                <img src="images/slide1.jpg" alt="Your first image" class="slide-image">
+                <div class="slide-content">
+                    <h2>Your Image 1</h2>
+                    <p>Description of your first image</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="Your second image" class="slide-image">
+                <div class="slide-content">
+                    <h2>Your Image 2</h2>
+                    <p>Description of your second image</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="Your third image" class="slide-image">
+                <div class="slide-content">
+                    <h2>Your Image 3</h2>
+                    <p>Description of your third image</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/slide4.jpg" alt="Your fourth image" class="slide-image">
+                <div class="slide-content">
+                    <h2>Your Image 4</h2>
+                    <p>Description of your fourth image</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation arrows -->
+        <button class="nav-btn prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="nav-btn next-btn" onclick="changeSlide(1)">❯</button>
+        
+        <!-- Dots indicator -->
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
